@@ -79,7 +79,7 @@ login() {
 # 构建镜像
 build() {
     print_message INFO "正在构建开发镜像..."
-    docker build --no-cache --network host . -t $images
+    docker build --network host . -t $images
     print_message INFO "镜像构建完成"
 }
 # 删除镜像

@@ -13,26 +13,6 @@
         <h5 f-c-c text-24 font-normal color="#6a6a6a">
           <icon-custom-logo mr-10 text-50 color-primary />{{ $t('app_name') }}
         </h5>
-        <div mt-30>
-          <n-input
-            v-model:value="loginInfo.username"
-            autofocus
-            class="h-50 items-center pl-10 text-16"
-            placeholder="admin"
-            :maxlength="20"
-          />
-        </div>
-        <div mt-30>
-          <n-input
-            v-model:value="loginInfo.password"
-            class="h-50 items-center pl-10 text-16"
-            type="password"
-            show-password-on="mousedown"
-            placeholder="123456"
-            :maxlength="20"
-            @keypress.enter="handleLogin"
-          />
-        </div>
 
         <div mt-20>
           <n-button
